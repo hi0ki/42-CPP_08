@@ -1,5 +1,5 @@
 #include "easyfind.hpp"
-
+#include <bits/stdc++.h>
 
 int main()
 {
