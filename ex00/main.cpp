@@ -1,7 +1,9 @@
-#include <iostream>
+#include "easyfind.hpp"
 
 
 int main()
 {
-	std::cout << "ghyrha\n";
+	std::vector<int> numbers = {1, 2, 3, 4, 5};
+
+	easyfind(numbers, 1);
 }
