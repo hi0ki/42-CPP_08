@@ -2,7 +2,8 @@
 
 Span::Span(unsigned int N)
 {
-	// this->N = N;
+	this->N = N;
+	std::cout << "Constructor called!!" << std::endl;
 }
 
 Span::Span(const Span &obj)
@@ -13,7 +14,17 @@ Span::Span(const Span &obj)
 
 void Span::addNumber(unsigned int num)
 {
-	N.push_back(num);
+	if (this->numbers.size() < this->N)
+		numbers.push_back(num);
+	else
+		throw std::runtime_error("Span is full, cannot add more numbers.");
+}
+
+int Span::shortestSpan()
+{}
+int Span::longestSpan()
+{
+	std::sort 
 }
 
 

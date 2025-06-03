@@ -8,12 +8,16 @@
 class Span
 {
 	private:
-		std::vector<int> N;
+		std::vector<int> numbers;
+		unsigned int N;
 		Span();
 	public:
 		Span(unsigned int N);
 		Span(const Span &obj);
+
 		void addNumber(unsigned int num);
+		int shortestSpan();
+		int longestSpan();
 		Span &operator=(const Span &obj);
 		~Span();
 };
