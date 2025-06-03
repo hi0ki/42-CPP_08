@@ -1,9 +1,20 @@
 #include "easyfind.hpp"
-#include <bits/stdc++.h>
 
 int main()
 {
-	std::vector<int> numbers = {1, 2, 3, 4, 5};
+	std::vector<int> numbers;
+	numbers.push_back(5);
+	numbers.push_back(2);
+	numbers.push_back(1);
+	numbers.push_back(6);
 
-	easyfind(numbers, 1);
+	try
+	{
+		int index = easyfind(numbers, 10);
+		std::cout << "The element 1 is found at index: " << index << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl; 
+	}
 }
