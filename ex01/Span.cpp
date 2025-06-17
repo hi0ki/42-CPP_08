@@ -20,12 +20,6 @@ void Span::addNumber(unsigned int num)
 		throw std::runtime_error("Span is full, cannot add more numbers.");
 }
 
-void print(std::vector<int> num)
-{
-	for (int i = 0; i < num.size(); i++)
-		std::cout << num[i] << std::endl;
-}
-
 int Span::shortestSpan()
 {
 	int result;
