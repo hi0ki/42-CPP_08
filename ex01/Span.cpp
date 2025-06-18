@@ -20,25 +20,6 @@ void Span::addNumber(unsigned int num)
 		throw std::runtime_error("Span is full, cannot add more numbers.");
 }
 
-<<<<<<< HEAD
-// int Span::shortestSpan()
-// {
-
-// }
-
-void print(std::vector<int> num)
-{
-	for (int i = 0; i < num.size(); i++)
-	{
-		std::cout << num[i]<< std::endl;
-	}
-=======
-void print(std::vector<int> num)
-{
-	for (int i = 0; i < num.size(); i++)
-		std::cout << num[i] << std::endl;
-}
-
 int Span::shortestSpan()
 {
 	int result;
@@ -55,22 +36,16 @@ int Span::shortestSpan()
 		}
 	}
 	return result;
->>>>>>> 22b4262ce326abbc7ee9a75fc69fe6c6c2e20cd4
 }
 
 int Span::longestSpan()
 {
-<<<<<<< HEAD
-	std::cout << numbers.size() << std::endl;
-	return 1;
-=======
 	int size = numbers.size();
 	if (numbers.empty() || size == 1)
 		throw std::runtime_error("there is no number in the span");
 	std::sort(numbers.begin(), numbers.end());
 	int result = numbers[size - 1] - numbers[0];
 	return result;
->>>>>>> 22b4262ce326abbc7ee9a75fc69fe6c6c2e20cd4
 }
 
 
