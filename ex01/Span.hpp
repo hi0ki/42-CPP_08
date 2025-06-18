@@ -16,6 +16,15 @@ class Span
 		Span(const Span &obj);
 
 		void addNumber(unsigned int num);
+		template <typename T>
+		void addNumber(T begin, T end)
+		{
+			while (begin != end)
+			{
+				addNumber(*begin);
+				begin++;
+			}
+		}
 		int shortestSpan();
 		int longestSpan();
 		Span &operator=(const Span &obj);
