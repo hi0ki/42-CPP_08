@@ -6,9 +6,11 @@
 	#include <deque>
 
 
-	class MutanStack
+	template <typename T>
+	class MutantStack : public std::stack<T>
 	{
-		
+		public:
+			typedef typename std::stack<T>::
 	};
 
 #endif
