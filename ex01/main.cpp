@@ -25,7 +25,7 @@ int main()
 	try
 	{
 		std::vector<int> var;
-		Span sp1 = Span(3);
+		Span sp1(3);
 
 		var.push_back(6);
 		var.push_back(3);
