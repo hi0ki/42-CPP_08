@@ -24,7 +24,16 @@ int main()
 	std::cout << *it << std::endl;
 	++it;
 	}
-	std::cout << "-------------" << std::endl;
 	std::stack<int> s(mstack);
+	std::cout << "------ second test ------" << std::endl;
+	MutantStack<int>::reverse_iterator it1 = mstack.rbegin();
+	MutantStack<int>::reverse_iterator ite1 = mstack.rend();
+
+	while (it1 != ite1)
+	{
+		std::cout << *it1 << " ";;
+		++it1;
+	}
+	std::cout << std::endl;
 	return 0;
 }
