@@ -10,8 +10,8 @@ int main()
 
 	try
 	{
-		int index = easyfind(numbers, 10);
-		std::cout << "The element 1 is found at index: " << index << std::endl;
+		int index = easyfind(numbers, 2);
+		std::cout << "The element found at index: " << index << std::endl;
 	}
 	catch (std::exception &e)
 	{
