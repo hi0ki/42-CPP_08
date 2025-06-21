@@ -17,4 +17,14 @@ int main()
 	{
 		std::cout << e.what() << std::endl; 
 	}
+	std::cout << "---------- second test ----------" << std::endl;
+	try
+	{
+		int index = easyfind(numbers, -1);
+		std::cout << "The element found at index: " << index << std::endl;
+	}
+	catch (std::exception &e)
+	{
+		std::cout << e.what() << std::endl; 
+	}
 }
